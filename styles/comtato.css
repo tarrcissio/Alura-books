@@ -1,0 +1,64 @@
+.comtato{
+    background-color: var(--branco);
+    padding: 1em;
+}
+
+.comtato__titulo, .comtato__texto{
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    
+}
+
+.comtato__titulo{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.comtato__texto{
+    font-weight: 300;
+    margin: 1em 0;
+}
+
+.comtato__email{
+    padding: 1em;
+    border: 1px solid var(--azul);
+    border-radius: 24px;
+    width: 90%;
+    color: var(--azul);
+}
+
+.comtato__email::placeholder{
+    font-family: var(--font-principal);
+    color: var(--azul);
+    background: url("../imagens/Email.svg") no-repeat;
+    padding-left: 2em;
+}
+
+@media screen and (min-width: 1024px) {
+    .comtato{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .comtato__titulo{
+        font-size: 24px;
+    }
+    .contato__descricao{
+        margin-right: 1em;
+        width: 30%;
+    }
+
+    .comtato__email{
+        width: 30%;
+    }
+    
+}
+@media screen and (min-width: 1728px){
+   .comtato{
+    padding: 3em 20vw;
+   }
+    
+}
